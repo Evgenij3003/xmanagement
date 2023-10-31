@@ -233,7 +233,7 @@ window.addEventListener("load", function(e) {
     if (document.querySelector("._page-about")) {
         const elemId = localStorage.getItem("current-card");
         if (elemId) {
-            const currentElement = document.querySelector(`[data-scroll-id='${elemId}'`);
+            const currentElement = document.querySelector(`[data-scroll-id=${elemId}`);
             window.scrollTo({
                 top: currentElement.getBoundingClientRect().top - 100,
                 behavior: "smooth",
@@ -246,7 +246,7 @@ window.addEventListener("load", function(e) {
     if (document.querySelector("._page-articles")) {
         const elemId = localStorage.getItem("current-card");
         if (elemId) {
-            const currentElement = document.querySelector(`[data-scroll-id='${elemId}'`);
+            const currentElement = document.querySelector(`[data-scroll-id=${elemId}`);
             const showmoreElem = currentElement.querySelector("[data-showmore]");
             const showmoreContent = currentElement.querySelector("[data-showmore-content]");
             const showmoreButton = currentElement.querySelector("[data-showmore-button]");
