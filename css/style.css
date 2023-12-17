@@ -1422,7 +1422,6 @@ textarea::-webkit-scrollbar-thumb {
   transform: translateX(-50%);
   width: 120rem;
   height: 100%;
-  z-index: -1;
 }
 @media (min-width: 120.0625em) {
   .slider-image {
